@@ -17,8 +17,8 @@
 
     <RelativeLayout
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_centerInParent="true"
@@ -27,14 +27,15 @@
             android:src="@drawable/icn_clean_days"/>
 
         <TextView
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="56dp"
+
+            android:layout_marginTop="59dp"
             android:textStyle="bold"
-            android:layout_marginTop="44dp"
-            tools:text="23"/>
+            android:text="23"/>
 
     </RelativeLayout>
 

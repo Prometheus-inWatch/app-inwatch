@@ -9,8 +9,9 @@ import android.view.ViewGroup;
 import com.prometheus.quitsmoking.R;
 import com.squareup.timessquare.CalendarPickerView;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.Date;
 
 import butterknife.ButterKnife;
@@ -37,7 +38,24 @@ public class MonthCalendarFragment extends Fragment {
         calendar.init(today, nextYear.getTime())
                 .withSelectedDate(today).inMode(CalendarPickerView.SelectionMode.SINGLE);
 
-        calendar.highlightDates(Arrays.asList(new Date()));
+        Collection<Date> dates = new ArrayList<>();
+
+        dates.add(new Date());
+
+        Calendar mycalendar = Calendar.getInstance();
+        mycalendar.add(Calendar.YEAR,+1);
+        mycalendar.add(Calendar.DAY_OF_YEAR,-1);
+        dates.add(mycalendar.getTime());
+
+        mycalendar.add(Calendar.DAY_OF_YEAR,-2);
+        dates.add(mycalendar.getTime());
+
+        mycalendar.add(Calendar.DAY_OF_YEAR,-4);
+        dates.add(mycalendar.getTime());
+
+
+        calendar.highlightDates(dates);
+
 
         return view;
     }
