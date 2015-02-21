@@ -5,7 +5,9 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.prometheus.quitsmoking.adapter.MainMenuAdapter;
 import com.viewpagerindicator.LinePageIndicator;
 
@@ -62,4 +64,23 @@ public class MainActivity extends FragmentActivity {
     }
 
 
+    public void onPanicButtonPressed() {
+
+        new MaterialDialog.Builder(this)
+                .content(TipManager.getRandomTip(getBaseContext()))
+                .positiveText("Hecho!")
+                .negativeText("Otro")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onNegative(MaterialDialog dialog) {
+                        onPanicButtonPressed();
+                    }
+
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        Toast.makeText(getApplicationContext(),"Ánimo!!! Dentro de poco serás una persona nueva :)",Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .show();
+    }
 }
