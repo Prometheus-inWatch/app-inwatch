@@ -42,4 +42,14 @@ public class QuestionaryActivity extends FragmentActivity {
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);
     }
+
+    public void onCigarretesCost(String amount) {
+
+        viewPager.setCurrentItem(3);
+    }
+
+    public void onCigarAmount(String cigar_10) {
+
+        viewPager.setCurrentItem(2);
+    }
 }

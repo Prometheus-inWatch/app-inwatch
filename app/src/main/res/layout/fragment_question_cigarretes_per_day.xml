@@ -32,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="10 cigarrillos"
+                android:id="@+id/cigar_10"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
                 android:textColor="@color/white"
@@ -42,6 +43,7 @@
             <Button
                 android:text="1 paquete"
                 android:textSize="15dp"
+                android:id="@+id/box_1"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
                 android:textColor="@color/white"
@@ -62,6 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:id="@+id/box_2"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
                 android:textColor="@color/white"
@@ -72,6 +75,7 @@
             <Button
                 android:textSize="15dp"
                 android:layout_margin="3dp"
+                android:id="@+id/box_3"
                 android:background="@drawable/default_button_selector"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"

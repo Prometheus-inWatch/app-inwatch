@@ -57,7 +57,7 @@
     <string name="tip_no038">Dele un abrazo a un ser querido</string>
     <string name="tip_no039">Limpie el refrigerador</string>
     <string name="tip_no040">Canalice sus pensamientos a algo constructivo como un nuevo pasatiempo o trabajo voluntario</string>
-    <string name="tip_no041">Gaste el dinero que ahorró al no fumar</voluntario>
+    <string name="tip_no041">Gaste el dinero que ahorró al no fumar</string>
     <string name="tip_no042">Coma un helado</string>
     <string name="tip_no043">Mantenga su chequera</string>
     <string name="tip_no044">Vaya a la biblioteca</string>
@@ -118,5 +118,5 @@
     <string name="tip_no099">Haga una tarjeta de saludo para alguien que estima</string>
     <string name="tip_no100">Escriba una lista de las cosas por las que está agradecido</string>
     <string name="tip_no101">Haz un sudoku</string>
-    
+
 </resources>

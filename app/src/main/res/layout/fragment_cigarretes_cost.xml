@@ -29,20 +29,23 @@
             android:layout_height="match_parent">
 
             <Button
+
+                android:id="@+id/less_4_euro"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="1€-2€"
+                android:text="-4€"
                 android:textColor="@color/white"
                 android:textSize="16dp"
                 android:layout_weight="1" />
 
 
             <Button
+                android:id="@+id/between4_5_euro"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
-                android:text="2€-3€"
+                android:text="4€-5€"
                 android:textSize="16dp"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
@@ -59,6 +62,7 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/between5_6_euro"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
                 android:layout_width="match_parent"
@@ -66,10 +70,11 @@
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:textSize="16dp"
-                android:text="3€-4€"/>
+                android:text="5€-6€"/>
 
 
             <Button
+                android:id="@+id/more_than_6_euro"
                 android:layout_margin="3dp"
                 android:background="@drawable/default_button_selector"
                 android:textSize="16dp"
@@ -77,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="+4€"/>
+                android:text="+6€"/>
 
 
         </LinearLayout>
