@@ -6,6 +6,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.prometheus.quitsmoking.fragment.DaysWithoutSmokingFragment;
 import com.prometheus.quitsmoking.fragment.SavingsFragment;
+import com.prometheus.quitsmoking.fragment.TimeSavedFragment;
+import com.prometheus.quitsmoking.fragment.UnsmokedCigarsFragment;
 
 /**
  * Created by david on 20/2/15.
@@ -32,9 +34,9 @@ public class UserStatisticsAdapter extends FragmentPagerAdapter {
             case 1: // Fragment # 0 - This will show FirstFragment different title
                 return DaysWithoutSmokingFragment.newInstance();
             case 2: // Fragment # 0 - This will show FirstFragment different title
-                return DaysWithoutSmokingFragment.newInstance();
+                return TimeSavedFragment.newInstance();
             case 3: // Fragment # 0 - This will show FirstFragment different title
-                return DaysWithoutSmokingFragment.newInstance();
+                return UnsmokedCigarsFragment.newInstance();
             default:
                 return null;
         }
