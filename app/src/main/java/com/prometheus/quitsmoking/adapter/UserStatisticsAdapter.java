@@ -11,7 +11,7 @@ import com.prometheus.quitsmoking.fragment.SavingsFragment;
  * Created by david on 20/2/15.
  */
 public class UserStatisticsAdapter extends FragmentPagerAdapter {
-    private static int NUM_ITEMS = 2;
+    private static int NUM_ITEMS = 4;
 
     public UserStatisticsAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
@@ -31,7 +31,10 @@ public class UserStatisticsAdapter extends FragmentPagerAdapter {
                 return SavingsFragment.newInstance();
             case 1: // Fragment # 0 - This will show FirstFragment different title
                 return DaysWithoutSmokingFragment.newInstance();
-
+            case 2: // Fragment # 0 - This will show FirstFragment different title
+                return DaysWithoutSmokingFragment.newInstance();
+            case 3: // Fragment # 0 - This will show FirstFragment different title
+                return DaysWithoutSmokingFragment.newInstance();
             default:
                 return null;
         }

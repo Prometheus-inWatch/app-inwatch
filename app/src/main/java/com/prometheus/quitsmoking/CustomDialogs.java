@@ -14,7 +14,7 @@ public class CustomDialogs {
     public static void showOfferDialog(final Context context){
 
         new MaterialDialog.Builder(context)
-                .customView(R.layout.dialog_offer)
+                .customView(R.layout.dialog_offer, true)
                 .positiveText("Hecho!")
                 .negativeText("En otro momento")
                 .callback(new MaterialDialog.ButtonCallback() {

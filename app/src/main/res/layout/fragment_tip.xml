@@ -13,6 +13,7 @@
         android:src="@drawable/icn_daily_tip"/>
 
     <TextView
+        android:id="@+id/daily_tip_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
