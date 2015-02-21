@@ -33,8 +33,7 @@ public class MainActivity extends FragmentActivity {
 
         adapterViewPager = new MainMenuAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
-        viewPager.setOffscreenPageLimit(6);
-
+        viewPager.setOffscreenPageLimit(adapterViewPager.getCount());
 
         viewPagerIndicator.setViewPager(viewPager);
     }

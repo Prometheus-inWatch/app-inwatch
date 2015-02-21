@@ -2,7 +2,7 @@ package com.prometheus.quitsmoking.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 
 import com.prometheus.quitsmoking.fragment.QuestionCigarretesCostFragment;
 import com.prometheus.quitsmoking.fragment.QuestionCigarretesPerDayFragment;
@@ -12,8 +12,8 @@ import com.prometheus.quitsmoking.fragment.WelcomeFragment;
 /**
  * Created by david on 20/2/15.
  */
-public class QuestionaryAdapter extends FragmentStatePagerAdapter {
-    private static int NUM_ITEMS = 6;
+public class QuestionaryAdapter extends FragmentPagerAdapter {
+    private static int NUM_ITEMS = 4;
 
     public QuestionaryAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);

@@ -21,19 +21,18 @@ public class VerticalCalendarPagerFragment extends Fragment {
     @InjectView(R.id.vertical_view_pager)
     VerticalViewPager viewPager;
 
-
     private CalendarAdapter adapterViewPager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_vertical_view_pager, container, false);
+        View view = inflater.inflate(R.layout.fragment_vertical_view_pager_2, container, false);
         ButterKnife.inject(this,view);
 
-        adapterViewPager = new CalendarAdapter(getActivity().getSupportFragmentManager());
+        adapterViewPager = new CalendarAdapter(getChildFragmentManager());
         viewPager.setAdapter(adapterViewPager);
-        viewPager.setOffscreenPageLimit(3);
+        viewPager.setOffscreenPageLimit(adapterViewPager.getCount());
 
         return view;
     }

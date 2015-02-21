@@ -1,5 +1,6 @@
 package com.prometheus.quitsmoking;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -31,11 +32,14 @@ public class QuestionaryActivity extends FragmentActivity {
 
         adapterViewPager = new QuestionaryAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
-        viewPager.setOffscreenPageLimit(6);
+        viewPager.setOffscreenPageLimit(adapterViewPager.getCount());
 
         viewPagerIndicator.setViewPager(viewPager);
     }
 
 
-
+    public void onReadyButtonPressed() {
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(intent);
+    }
 }

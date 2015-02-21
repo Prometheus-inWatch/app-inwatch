@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.prometheus.quitsmoking.R;
-import com.prometheus.quitsmoking.adapter.CalendarAdapter;
+import com.prometheus.quitsmoking.adapter.UserStatisticsAdapter;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -22,7 +22,7 @@ public class VerticalUserStatisticsFragment extends Fragment {
     VerticalViewPager viewPager;
 
 
-    private CalendarAdapter adapterViewPager;
+    private UserStatisticsAdapter adapterViewPager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,9 +31,9 @@ public class VerticalUserStatisticsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_vertical_view_pager, container, false);
         ButterKnife.inject(this,view);
 
-        adapterViewPager = new CalendarAdapter(getActivity().getSupportFragmentManager());
+        adapterViewPager = new UserStatisticsAdapter(getActivity().getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
-        viewPager.setOffscreenPageLimit(3);
+        viewPager.setOffscreenPageLimit(adapterViewPager.getCount());
 
         return view;
     }
