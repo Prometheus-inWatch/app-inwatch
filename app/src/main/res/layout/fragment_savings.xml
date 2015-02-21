@@ -6,10 +6,26 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="Has ahorrado \n 35€"
+        android:text="Dinero ahorrado"
+        android:layout_margin="6dp"
+        android:textSize="26dp"
         android:gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/icn_saved_money"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="45€"
+        android:textSize="33dp"
+        android:gravity="center"
+        android:textColor="@color/white"
         />
 
 </LinearLayout>
