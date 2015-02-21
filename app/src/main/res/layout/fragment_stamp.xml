@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:button="@drawable/icn_ok"
-        android:id="@+id/checkBox"
+        android:id="@+id/okCheckbox"
         android:layout_gravity="center"
         android:layout_centerInParent="true"
         android:gravity="center|center_vertical|center_horizontal" />
