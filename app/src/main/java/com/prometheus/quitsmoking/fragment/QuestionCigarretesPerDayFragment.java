@@ -11,16 +11,16 @@ import com.prometheus.quitsmoking.R;
 /**
  * Created by david on 20/2/15.
  */
-public class StampFragment extends Fragment {
+public class QuestionCigarretesPerDayFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_stamp, container, false);
+        View view = inflater.inflate(R.layout.fragment_question_cigarretes_per_day, container, false);
         return view;
     }
 
     public static Fragment newInstance() {
-        return new StampFragment();
+        return new QuestionCigarretesPerDayFragment();
     }
 }

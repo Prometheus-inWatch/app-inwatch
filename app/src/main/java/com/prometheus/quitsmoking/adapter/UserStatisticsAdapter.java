@@ -4,16 +4,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.prometheus.quitsmoking.fragment.MonthCalendarFragment;
-import com.prometheus.quitsmoking.fragment.StampFragment;
+import com.prometheus.quitsmoking.fragment.DaysWithoutSmokingFragment;
+import com.prometheus.quitsmoking.fragment.SavingsFragment;
 
 /**
  * Created by david on 20/2/15.
  */
-public class CalendarAdapter extends FragmentStatePagerAdapter {
+public class UserStatisticsAdapter extends FragmentStatePagerAdapter {
     private static int NUM_ITEMS = 2;
 
-    public CalendarAdapter(FragmentManager fragmentManager) {
+    public UserStatisticsAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
     }
 
@@ -28,9 +28,9 @@ public class CalendarAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0: // Fragment # 0 - This will show FirstFragment
-                return StampFragment.newInstance();
+                return SavingsFragment.newInstance();
             case 1: // Fragment # 0 - This will show FirstFragment different title
-                return MonthCalendarFragment.newInstance();
+                return DaysWithoutSmokingFragment.newInstance();
 
             default:
                 return null;

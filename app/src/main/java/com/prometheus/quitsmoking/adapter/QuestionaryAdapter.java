@@ -4,19 +4,18 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.prometheus.quitsmoking.fragment.PanicButtonFragment;
-import com.prometheus.quitsmoking.fragment.SavingsFragment;
-import com.prometheus.quitsmoking.fragment.TipFragment;
-import com.prometheus.quitsmoking.fragment.VerticalCalendarPagerFragment;
-import com.prometheus.quitsmoking.fragment.VerticalUserStatisticsFragment;
+import com.prometheus.quitsmoking.fragment.QuestionCigarretesCostFragment;
+import com.prometheus.quitsmoking.fragment.QuestionCigarretesPerDayFragment;
+import com.prometheus.quitsmoking.fragment.UserDataFragment;
+import com.prometheus.quitsmoking.fragment.WelcomeFragment;
 
 /**
  * Created by david on 20/2/15.
  */
-public class MainMenuAdapter extends FragmentStatePagerAdapter {
+public class QuestionaryAdapter extends FragmentStatePagerAdapter {
     private static int NUM_ITEMS = 6;
 
-    public MainMenuAdapter(FragmentManager fragmentManager) {
+    public QuestionaryAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
     }
 
@@ -33,17 +32,14 @@ public class MainMenuAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return VerticalUserStatisticsFragment.newInstance();
+                return WelcomeFragment.newInstance();
             case 1:
-                return TipFragment.newInstance();
+                return QuestionCigarretesPerDayFragment.newInstance();
             case 2:
-                return VerticalCalendarPagerFragment.newInstance();
+                return QuestionCigarretesCostFragment.newInstance();
             case 3:
-                return SavingsFragment.newInstance();
-            case 4:
-                return VerticalCalendarPagerFragment.newInstance();
-            case 5:
-                return PanicButtonFragment.newInstance();
+                return UserDataFragment.newInstance();
+
 
             default:
                 return null;

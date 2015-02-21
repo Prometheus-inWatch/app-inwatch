@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.prometheus.quitsmoking.adapter.MainMenuAdapter;
+import com.viewpagerindicator.LinePageIndicator;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -16,6 +17,11 @@ public class MainActivity extends FragmentActivity {
 
     @InjectView(R.id.view_pager)
     ViewPager viewPager;
+
+    @InjectView(R.id.view_pager_indicator)
+    LinePageIndicator viewPagerIndicator;
+
+
     private MainMenuAdapter adapterViewPager;
 
     @Override
@@ -28,6 +34,9 @@ public class MainActivity extends FragmentActivity {
         adapterViewPager = new MainMenuAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
         viewPager.setOffscreenPageLimit(6);
+
+
+        viewPagerIndicator.setViewPager(viewPager);
     }
 
 

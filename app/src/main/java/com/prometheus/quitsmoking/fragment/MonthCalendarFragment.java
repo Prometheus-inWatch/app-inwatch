@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import com.prometheus.quitsmoking.R;
 import com.squareup.timessquare.CalendarPickerView;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -34,7 +35,9 @@ public class MonthCalendarFragment extends Fragment {
 
         Date today = new Date();
         calendar.init(today, nextYear.getTime())
-                .withSelectedDate(today).inMode(CalendarPickerView.SelectionMode.MULTIPLE);
+                .withSelectedDate(today).inMode(CalendarPickerView.SelectionMode.SINGLE);
+
+        calendar.highlightDates(Arrays.asList(new Date()));
 
         return view;
     }

@@ -16,7 +16,7 @@ public class TipFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_panic_button, container, false);
+        View view = inflater.inflate(R.layout.fragment_tip, container, false);
         return view;
     }
 
