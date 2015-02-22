@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="¿Cuánto tiempo después de despertarse fuma su primer cigarrillo?"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Menos de 5 minutos"
+                android:id="@+id/fager_11"
+                android:layout_margin="3dp"
+                android:background="@drawable/default_button_selector"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_weight="1" />
+
+
+            <Button
+                android:text="De 6 a 30 minutos"
+                android:textSize="15dp"
+                android:id="@+id/fager_12"
+                android:layout_margin="3dp"
+                android:background="@drawable/default_button_selector"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/fager_13"
+                android:layout_margin="3dp"
+                android:background="@drawable/default_button_selector"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="De 31 a 60 minutos"/>
+
+
+            <Button
+                android:textSize="15dp"
+                android:layout_margin="3dp"
+                android:id="@+id/fager_14"
+                android:background="@drawable/default_button_selector"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Más de 60 minutos"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
