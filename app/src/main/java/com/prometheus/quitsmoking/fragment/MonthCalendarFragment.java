@@ -43,17 +43,26 @@ public class MonthCalendarFragment extends Fragment {
         dates.add(new Date());
 
         Calendar mycalendar = Calendar.getInstance();
-        mycalendar.add(Calendar.YEAR,+1);
-        mycalendar.add(Calendar.DAY_OF_YEAR,-1);
+        //mycalendar.add(Calendar.YEAR,+1);
+        mycalendar.add(Calendar.DAY_OF_YEAR,+1);
         dates.add(mycalendar.getTime());
 
-        mycalendar.add(Calendar.DAY_OF_YEAR,-2);
+        mycalendar.add(Calendar.DAY_OF_YEAR,+1);
         dates.add(mycalendar.getTime());
 
-        mycalendar.add(Calendar.DAY_OF_YEAR,-4);
+        mycalendar.add(Calendar.DAY_OF_YEAR,+1);
         dates.add(mycalendar.getTime());
 
+        mycalendar.add(Calendar.DAY_OF_YEAR,+1);
+        dates.add(mycalendar.getTime());
 
+        mycalendar.add(Calendar.DAY_OF_YEAR,+1);
+        dates.add(mycalendar.getTime());
+
+        mycalendar.add(Calendar.DAY_OF_YEAR,+1);
+        dates.add(mycalendar.getTime());
+
+        calendar.selectDate(mycalendar.getTime());
         calendar.highlightDates(dates);
 
 

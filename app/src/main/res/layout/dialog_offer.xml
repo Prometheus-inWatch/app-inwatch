@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Enhorabuena! Tus progresos han hecho que ya hayas ahorrado 50€!\n ¿Por qué no sales a celebrarlo disfrutando de una sesión de SPA con masaje en Granada?"
+        android:text="Enhorabuena! Tus progresos han hecho que ya hayas ahorrado más de 25€!\n ¿Por qué no sales a celebrarlo disfrutando de una sesión de SPA con masaje en Granada?"
         android:layout_margin="6dp"
 
         android:textSize="15dp"
