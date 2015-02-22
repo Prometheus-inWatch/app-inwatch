@@ -43,6 +43,10 @@ public class QuestionaryActivity extends FragmentActivity {
         startActivity(intent);
     }
 
+    public void onFagerstromSelection() {
+        viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
+    }
+
     public void onCigarretesCost(String amount) {
 
         viewPager.setCurrentItem(3);
