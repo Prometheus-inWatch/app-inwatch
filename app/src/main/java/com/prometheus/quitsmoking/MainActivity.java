@@ -1,6 +1,7 @@
 package com.prometheus.quitsmoking;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
@@ -38,6 +39,17 @@ public class MainActivity extends FragmentActivity {
         viewPager.setOffscreenPageLimit(adapterViewPager.getCount());
 
         viewPagerIndicator.setViewPager(viewPager);
+
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                CustomDialogs.showOfferDialog(MainActivity.this);
+            }
+        }, 5000);
+
     }
 
 
@@ -78,7 +90,7 @@ public class MainActivity extends FragmentActivity {
 
                     @Override
                     public void onPositive(MaterialDialog dialog) {
-                        Toast.makeText(getApplicationContext(),"Ánimo!!! Dentro de poco serás una persona nueva :)",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Ánimo!!! Dentro de poco serás una persona nueva, Tu esfuerzo tiene su recompensa!",Toast.LENGTH_SHORT).show();
                     }
                 })
                 .show();

@@ -7,4 +7,5 @@
     <color name="light_blue">#90CAf9</color>
 
     <color name="green">#23c932</color>
+    <color name="transparent">#00000000</color>
 </resources>
