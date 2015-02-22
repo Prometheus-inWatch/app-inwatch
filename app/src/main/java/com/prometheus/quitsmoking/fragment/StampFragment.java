@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
+import com.prometheus.quitsmoking.CustomDialogs;
 import com.prometheus.quitsmoking.R;
 
 /**
@@ -24,6 +26,14 @@ public class StampFragment extends Fragment {
 
 
         this.okCheckbox = (CheckBox)view.findViewById(R.id.okCheckbox);
+
+        okCheckbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                CustomDialogs.showDiscountDialog(getActivity());
+            }
+        });
 
         return view;
     }
