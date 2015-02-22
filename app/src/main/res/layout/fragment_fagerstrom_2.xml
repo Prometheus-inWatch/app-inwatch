@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/white"
+        android:textSize="16dp"
         android:text="¿Encuentra dificultad para no fumar en los sitios donde está prohibido (cine...)?"/>
 
     <LinearLayout

@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/white"
+        android:textSize="16dp"
         android:text="¿Fuma aunque esté tan enfermo que tenga que guardar cama la mayor parte del día?"/>
 
     <LinearLayout
