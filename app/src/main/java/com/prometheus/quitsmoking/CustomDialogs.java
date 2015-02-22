@@ -16,7 +16,7 @@ public class CustomDialogs {
         new MaterialDialog.Builder(context)
                 .customView(R.layout.dialog_offer, true)
                 .positiveText("Hecho!")
-                .negativeText("En otro momento")
+                .negativeText("Más tarde")
                 .callback(new MaterialDialog.ButtonCallback() {
                     @Override
                     public void onNegative(MaterialDialog dialog) {
@@ -26,12 +26,30 @@ public class CustomDialogs {
                     @Override
                     public void onPositive(MaterialDialog dialog) {
 
-                        String url = "http://www.example.com";
+                        String url = "http://oferplan.ideal.es/plan-oferta/granada/circuito-spa-masaje-para-2/3061";
                         Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         context.startActivity(i);
                     }
                 })
+                .show();
+    }
+
+    public static void showDiscountDialog(final Context context){
+
+        new MaterialDialog.Builder(context)
+                .customView(R.layout.dialog_discount, true)
+                .positiveText("Hecho!")
+                .show();
+    }
+
+
+    public static void showDailyTipDialog(final Context context){
+
+        new MaterialDialog.Builder(context)
+                .title("Consejo")
+                .positiveText("Hecho!")
+                .content(TipManager.getRandomDailyTip(context))
                 .show();
     }
 }
