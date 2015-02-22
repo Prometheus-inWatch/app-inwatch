@@ -38,8 +38,8 @@ public class CustomDialogs {
     public static void showDiscountDialog(final Context context){
 
         new MaterialDialog.Builder(context)
+
                 .customView(R.layout.dialog_discount, true)
-                .positiveText("Hecho!")
                 .show();
     }
 

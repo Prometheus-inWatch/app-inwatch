@@ -1,11 +1,13 @@
 package com.prometheus.quitsmoking.fragment;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.prometheus.quitsmoking.CustomDialogs;
 import com.prometheus.quitsmoking.R;
 
 import butterknife.ButterKnife;
@@ -29,6 +31,14 @@ public class SavingsFragment extends Fragment {
     @OnClick(R.id.savings_image)
     public void savings_image(){
 
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                CustomDialogs.showOfferDialog(getActivity());
+            }
+        }, 2000);
     }
 
 

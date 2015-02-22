@@ -41,14 +41,7 @@ public class MainActivity extends FragmentActivity {
         viewPagerIndicator.setViewPager(viewPager);
 
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
 
-                CustomDialogs.showOfferDialog(MainActivity.this);
-            }
-        }, 5000);
 
     }
 

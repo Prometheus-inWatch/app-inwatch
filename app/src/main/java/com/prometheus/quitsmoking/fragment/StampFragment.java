@@ -1,6 +1,7 @@
 package com.prometheus.quitsmoking.fragment;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,7 +32,16 @@ public class StampFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-                CustomDialogs.showDiscountDialog(getActivity());
+                if (isChecked) {
+                    final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            CustomDialogs.showDiscountDialog(getActivity());
+                        }
+                    }, 2000);
+                }
             }
         });
 
